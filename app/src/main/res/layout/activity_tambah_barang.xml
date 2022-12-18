@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.TambahBarangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:tint="@color/dark_charcoal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Barang"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isi Detail Barang"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_nama_barang"
+            style="@style/Widget.Magis.Input.Outlined.White.StrokeDarkLiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:hintEnabled="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/form_nama_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12sp"
+                android:paddingVertical="15dp"
+                android:hint="Nama Barang"
+                android:textColorHint="@color/argent"
+                android:textColor="@color/black"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_berat_barang"
+            style="@style/Widget.Magis.Input.Outlined.White.StrokeDarkLiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            app:hintEnabled="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/form_berat_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12sp"
+                android:paddingVertical="15dp"
+                android:hint="Berat Barang"
+                android:textColorHint="@color/argent"
+                android:textColor="@color/black"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_jumlah_barang"
+            style="@style/Widget.Magis.Input.Outlined.White.StrokeDarkLiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            app:hintEnabled="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/form_jumlah_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12sp"
+                android:paddingVertical="15dp"
+                android:hint="Jumlah Barang"
+                android:textColorHint="@color/argent"
+                android:textColor="@color/black"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_kode_barang"
+            style="@style/Widget.Magis.Input.Outlined.White.StrokeDarkLiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            app:hintEnabled="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/form_kode_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12sp"
+                android:paddingVertical="15dp"
+                android:hint="Kode Barang"
+                android:textColorHint="@color/argent"
+                android:textColor="@color/black"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_tambah_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:paddingVertical="10dp"
+            style="@style/Widget.Magis.Button.Filled.OxfordBlue"
+            android:text="Tambah Barang"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
